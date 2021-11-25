@@ -1,0 +1,97 @@
+:root {
+  --jblue: #043873;
+  --jlblue: #90b1d9;
+  --jdarkblue: #072445;
+  --defaultgrey: #32373f;
+}
+
+.welcome {
+  display: flex;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  color: var(--defaultgrey);
+  overflow-x: auto;
+}
+
+.welcome-container {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
+  padding: 3em 2em;
+  background-image: url("./save-web-bg-grey.png");
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.welcome-header {
+  margin: 0 0 1em 0;
+}
+
+.welcome-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.welcome-title {
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1.3;
+  margin: 1em 0 0;
+}
+
+.welcome-subtitle {
+  font-size: 2.0em;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0.5em 0;
+}
+
+.welcome-panel {
+  margin-bottom: 1.5em;
+}
+
+.welcome-panel-subsection {
+  margin-left: 1.5em;
+  color: #2d6bdc;
+}
+
+.welcome-panel-subsection a {
+  color: #2d6bdc;
+}
+
+.welcome-options {
+  margin-top: 3em;
+}
+
+.welcome-footer {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.display-welcome {
+  margin-top: 5em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--defaultgrey);
+}
+
+h1 {
+
+}
+
+h2 {
+  filter: brightness(200%);
+  font-weight: lighter;
+}
+
+h3 {
+
+}
