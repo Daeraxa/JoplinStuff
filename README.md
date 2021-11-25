@@ -8,3 +8,20 @@ Currently just some hand...crafted(??) HTML and CSS with a couple of assets ~~st
 Try not to laugh too hard at the HTML and CSS, I'm renowned for being dangerous with a keyboard, a text editor, too little knowledge and too much gin. I once created a SQL query that caused an oracle DBA to question his life choices and my employer relies on a VBA macro I created that I no longer comprehend.
 
 Requires the free version of font awesome 5 to be plonked in the root directory to get the FA fonts (used for the icons) - https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+
+## Questions
+> Why?
+
+Why not?
+
+> Do you have any idea what you are doing?
+
+None in the slightest
+
+> You did X wrong
+
+Yes I did. Thanks for letting me know
+
+> Were you drunk when you did this?
+
+Almost certainly
