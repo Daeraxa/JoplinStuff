@@ -1,0 +1,235 @@
+@use 'styleguidevariables' as sgv;
+@use 'desktextvariables' as dtv;
+@use 'deskuivariables' as duv;
+@use 'deskeditorvariables' as dev;
+
+html {
+  font-family: sgv.$font-family;
+  color: sgv.$font-defaultcolour;
+  background-color: sgv.$bg-colour;
+}
+
+h1 {}
+
+h2 {
+  //margin-left: 15px;
+}
+
+p {
+  margin-left: 15px;
+}
+
+.header-section {
+  background-color: sgv.$bg-colour2;
+  border: sgv.$header-borders;
+  border-radius: sgv.$header-border-radius;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 60% 40%;
+  justify-content: flex-start;
+
+  h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .joplin-logo {
+    height: 125px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: right;
+    margin: auto;
+    padding: 10px;
+  }
+}
+
+.inline-examples {
+  background-color: sgv.$bg-colour2;
+  border: sgv.$section-borders;
+  border-radius: sgv.$section-border-radius;
+  padding: 15px;
+/*Light theme text section*/
+  .light-default-font {
+    @include sgv.inline-colourblock-example (dtv.$light-default-font);
+  }
+  .light-inverted-font {
+    @include sgv.inline-colourblock-example (dtv.$light-inverted-font);
+  }
+  .light-inverted-font-80opc {
+    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-80opc);
+  }
+  .light-inverted-font-50opc {
+    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-50opc);
+  }
+  .light-inverted-font-40opc {
+    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-40opc);
+  }
+  .light-button-blue {
+    @include sgv.inline-colourblock-example (dtv.$light-button-blue);
+  }
+  .light-button-white {
+    @include sgv.inline-colourblock-example (dtv.$light-button-white);
+  }
+  .light-comment-text {
+    @include sgv.inline-colourblock-example (dtv.$light-comment-text);
+  }
+  .light-editor-items {
+    @include sgv.inline-colourblock-example (dtv.$light-editor-items);
+  }
+  .light-editor-items-33opc {
+    @include sgv.inline-colourblock-example (dtv.$light-editor-items-33opc);
+  }
+  .light-editor-urltext {
+    @include sgv.inline-colourblock-example (dtv.$light-editor-urltext);
+  }
+  .light-editor-urllink {
+    @include sgv.inline-colourblock-example (dtv.$light-editor-urllink);
+  }
+  .light-editor-monospace {
+    @include sgv.inline-colourblock-example (dtv.$light-editor-monospace);
+  }
+/* Dark theme text section */
+  .dark-default-font {
+    @include sgv.inline-colourblock-example (dtv.$dark-default-font);
+  }
+  .dark-default2-font {
+    @include sgv.inline-colourblock-example (dtv.$dark-default2-font);
+  }
+  .dark-default2-font-80opc {
+    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-80opc);
+  }
+  .dark-default2-font-50opc {
+    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-50opc);
+  }
+  .dark-default2-font-40opc {
+    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-40opc);
+  }
+  .dark-button-blue {
+    @include sgv.inline-colourblock-example (dtv.$dark-button-blue);
+  }
+  .dark-button-black {
+    @include sgv.inline-colourblock-example (dtv.$dark-button-black);
+  }
+  .dark-comment-text {
+    @include sgv.inline-colourblock-example (dtv.$dark-comment-text);
+  }
+  .dark-editor-items {
+    @include sgv.inline-colourblock-example (dtv.$dark-editor-items);
+  }
+  .dark-editor-items-33opc {
+    @include sgv.inline-colourblock-example (dtv.$dark-editor-items-33opc);
+  }
+  .dark-editor-urltext {
+    @include sgv.inline-colourblock-example (dtv.$dark-editor-urltext);
+  }
+  .dark-editor-urllink {
+    @include sgv.inline-colourblock-example (dtv.$dark-editor-urllink);
+  }
+  .dark-editor-monospace {
+    @include sgv.inline-colourblock-example (dtv.$dark-editor-monospace);
+  }
+/*Light theme UI section*/
+  .light-background-colour {
+    @include sgv.inline-colourblock-example (duv.$light-background-colour);
+  }
+  .light-background-colour-50opc {
+    @include sgv.inline-colourblock-example (duv.$light-background-colour-50opc);
+  }
+  .light-background-colour2 {
+    @include sgv.inline-colourblock-example (duv.$light-background-colour2);
+  }
+  .light-background-colour3 {
+    @include sgv.inline-colourblock-example (duv.$light-background-colour3);
+  }
+  .light-selected-colour1 {
+    @include sgv.inline-colourblock-example (duv.$light-selected-colour1);
+  }
+  .light-selected-colour2 {
+    @include sgv.inline-colourblock-example (duv.$light-divider-colour);
+  }
+  .light-divider-colour {
+    @include sgv.inline-colourblock-example (duv.$light-selected-colour2);
+  }
+  .light-button-colour1 {
+    @include sgv.inline-colourblock-example (duv.$light-button-colour1);
+  }
+  .light-button-colour2 {
+    @include sgv.inline-colourblock-example (duv.$light-button-colour2);
+  }
+  .light-scrollthumb-colour1 {
+    @include sgv.inline-colourblock-example (duv.$light-scrollthumb-colour1);
+  }
+  .light-scrollthumb-colour2 {
+    @include sgv.inline-colourblock-example (duv.$light-scrollthumb-colour2);
+  }
+  .light-scrollbarselected-colour {
+    @include sgv.inline-colourblock-example (duv.$light-scrollbarselected-colour);
+  }
+/*Dark theme UI section*/
+/*Light theme Editor section*/
+  .light-selected-text1 {
+    @include sgv.inline-colourblock-example (dev.$light-selected-text1);
+  }
+  .light-selected-text2 {
+    @include sgv.inline-colourblock-example (dev.$light-selected-text2);
+  }
+  .light-selected-text3 {
+    @include sgv.inline-colourblock-example (dev.$light-selected-text3);
+  }
+  .light-selected-text4 {
+    @include sgv.inline-colourblock-example (dev.$light-selected-text4);
+  }
+  .light-match-searchword {
+    @include sgv.inline-colourblock-example (dev.$light-match-searchword);
+  }
+  .light-failed-find {
+    @include sgv.inline-colourblock-example (dev.$light-failed-find);
+  }
+  .light-find-marker1 {
+    @include sgv.inline-colourblock-example (dev.$light-find-marker1);
+  }
+  .light-find-marker2 {
+    @include sgv.inline-colourblock-example (dev.$light-find-marker2);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//for scrolling

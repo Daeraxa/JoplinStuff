@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styleguide.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-section">
+    <h1> (Unofficial) Joplin Styleguide v0.1 (WIP)</h1>
+    <p> A guide to current Joplin themeing elements (v2.6.x) </p>
+    <img class="joplin-logo" src="./assets/joppaint.svg"></img>
+  </header>
+  <main class="styleguide-sections">
+    <section class="application-section">
+      <h2> Joplin Desktop </h2> <!-- TODO add collapsable sections for each "app" - Desktop, mobile, site, (forum?) etc. -->
+      <h3> Text colours </h3> <!--TODO add each theme to its own section + allow background colour toggle + collapsing sections-->
+      <div class="inline-examples">
+        <h4> Light theme </h4> <!--TODO redo wording and remove redundant repeated lines-->
+        <div class="light-default-font"> Light theme default text </div> <!-- Example - Notelist items-->
+        <div class="light-inverted-font"> Light theme inverted text </div> <!--Example - Notebooks list "Notebooks", selected notebook, selected menu item-->
+        <div class="light-inverted-font-80opc"> Light theme inverted text - 80% opacity </div> <!--Example - Notebook list items, menu list items (default light + 0.8 opacity) -->
+        <div class="light-inverted-font-50opc"> Light theme inverted text - 50% opacity </div> <!--Example - Notebook list carets, note counter (rgba 50%) -->
+        <div class="light-inverted-font-40opc"> Light theme inverted text - 40% opacity </div> <!--Example - Notebook list "All notes" (rgba 50% + 0.8 opacity) -->
+        <div class="light-button-blue"> Light theme blue button text </div> <!--Example - Empty buttons w/ blue text -->
+        <div class="light-button-white"> Light theme white button text </div> <!--Example - Full buttons w/ white text -->
+        <div class="light-comment-text"> Light theme faded </div> <!--Example - Options screen comments-->
+        <div class="light-editor-items"> Light theme editor items </div> <!--Example - Editor title bar time + buttons -->
+        <div class="light-editor-items-33opc"> Light theme editor items - 30% opacity</div> <!--Example - Editor title buttons when not selected-->
+        <div class="light-editor-urltext"> Light theme editor URL text </div> <!--Example - URL text in the editors + preview -->
+        <div class="light-editor-urllink"> Light theme editor URL link </div> <!--Example - URL link in markdown editor (same as text + 50% opacity) -->
+        <div class="light-editor-monospace"> Light theme editor monospace </div> <!--Example - Monospaced (indented) font in markdown + richtext editor | MOVE TO CODE SECTION??-->
+        <h4> Dark theme </h4>
+        <div class="dark-default-font"> Dark theme default text </div> <!-- Example - Notelist items-->
+        <div class="dark-default2-font"> Dark theme default2 text </div> <!--Example - Notebooks list "Notebooks", selected notebook, selected menu item-->
+        <div class="dark-default2-font-80opc"> Dark theme default2 text - 80% opacity </div> <!--Example - Notebook list items, menu list items (default dark + 0.8 opacity) -->
+        <div class="dark-default2-font-50opc"> Dark theme default2 text - 50% opacity </div> <!--Example - Notebook list carets, note counter (rgba 50%) -->
+        <div class="dark-default2-font-40opc"> Dark theme default2 text - 40% opacity </div> <!--Example - Notebook list "All notes" (rgba 50% + 0.8 opacity) -->
+        <div class="dark-button-blue"> Dark theme blue button text </div> <!--Example - Empty buttons w/ blue text -->
+        <div class="dark-button-black"> Dark theme black button text </div> <!--Example - Full buttons w/ black text -->
+        <div class="dark-comment-text"> Dark theme faded </div> <!--Example - Options screen comments-->
+        <div class="dark-editor-items"> Dark theme editor items </div> <!--Example - Editor title bar time + buttons -->
+        <div class="dark-editor-items-33opc"> Dark theme editor items - 30% opacity</div> <!--Example - Editor title buttons when not selected-->
+        <div class="dark-editor-urltext"> Dark theme editor URL text </div> <!--Example - URL text in the editors + preview -->
+        <div class="dark-editor-urllink"> Dark theme editor URL link </div> <!--Example - URL link in markdown editor (same as text + 50% opacity) -->
+        <div class="dark-editor-monospace"> Dark theme editor monospace </div> <!--Example - Monospaced (indented) font in markdown + richtext editor -->
+      </div>
+    </section>
+    <h3> UI and background colours </h3>
+    <section class="application-section">
+      <div class="inline-examples">
+        <h4> Light theme </h4>
+        <div class="light-background-colour"> Light theme background colour </div> <!--Example - Editor background -->
+        <div class="light-background-colour-50opc"> Light theme background colour - 50% opacity </div> <!--Example - Inactive search box-->
+        <div class="light-background-colour2"> Light theme background colour </div> <!--Example - Sidebar background -->
+        <div class="light-background-colour3"> Light theme background colour </div> <!--Example - Notelist + editor toolbar background -->
+        <div class="light-selected-colour1"> Light theme selected colour </div> <!-- Example - Notelist item hover -->
+        <div class="light-selected-colour2"> Light theme selected colour 2 </div> <!-- Example - Notebook list + config menu hover -->
+        <div class="light-divider-colour"> Light theme divider colour </div> <!--Example - dividers between sections -->
+        <div class="light-button-colour1"> Light theme button colour 1 </div> <!--Example - Primary button -->
+        <div class="light-button-colour2"> Light theme button colour 2 </div> <!--Example - Primary button -->
+        <div class="light-scrollthumb-colour1"> Light theme scrollbar thumb unselected </div> <!--Example - Scrollbar thumb unselected (33% opacity)-->
+        <div class="light-scrollthumb-colour2"> Light theme scrollbar thumb selected </div> <!--Example - Scrollbar thumb selected (75% opacity)-->
+        <div class="light-scrollbarselected-colour"> Light theme scrollbar track selected </div> <!-- Example - Scrollbar track selected ()-->
+      </div>
+    </section>
+    <h3> Editor colours </h3>
+    <section class="application-section">
+      <div class="inline-examples">
+        <h4> Light theme </h4>
+        <div class="light-selected-text1"> Light theme text highlight 1 </div> <!-- Example - Select text in markdown editor (unfocused) -->
+        <div class="light-selected-text2"> Light theme text highlight 2 </div> <!-- Example - Select text in markdown editor (focused) -->
+        <div class="light-selected-text3"> Light theme text highlight 3 </div> <!-- Example - Select text in preview pane (unfocused) -->
+        <div class="light-selected-text4"> Light theme text highlight 4 </div> <!-- Example - Select text in preview pane (unfocused) -->
+        <div class="light-match-searchword"> Light theme matched search word </div> <!-- Example - Notelist search box, found matching string -->
+        <div class="light-failed-find"> Light theme failed find </div> <!-- Example - Ctrl + f find not found-->
+        <div class="light-find-marker1"> Light theme find marker 1 </div> <!-- Example - Ctrl + f marker selected -->
+        <div class="light-find-marker2"> Light theme find marker 2 </div> <!-- Example - Ctrl + f marker -->
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

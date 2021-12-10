@@ -1,0 +1,42 @@
+/*Generic settings for the main page - not necessarily related to apps or website*/
+/*Colours*/
+$black: #000000;
+$dgrey: #32373f;
+$lgrey: #f4f5f6;
+$white: #ffffff;
+
+/*Font settings*/
+$font-family: 'Montserrat', sans-serif;
+$font-defaultcolour: $dgrey;
+$example-text-size: 14px;
+
+/*Divs + section formatting*/
+$bg-colour: $lgrey;
+$bg-colour2: $white;
+$border-colour: $dgrey;
+$header-borders: 2px solid $border-colour;
+$header-border-radius: 15px;
+$section-borders: 1px solid $border-colour;
+$section-border-radius: 15px;
+
+
+/*Mixins*/
+/*To format each inline example element*/
+@mixin inline-colourblock-example ($colour) {
+  height: 25px;
+  font-size: $example-text-size;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: $colour;
+    border-radius: 10px;
+    border: 1px solid $dgrey;
+    margin-right: 25px;
+  }
+}
