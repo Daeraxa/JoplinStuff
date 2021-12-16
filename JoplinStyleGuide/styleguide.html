@@ -11,75 +11,83 @@
 
 <body>
   <header class="header-section">
-    <h1> (Unofficial) Joplin Styleguide v0.1 (WIP)</h1>
+    <h1> (Unofficial) Joplin Styleguide v0.2 (WIP)</h1>
     <p> A guide to current Joplin themeing elements (v2.6.x) </p>
     <img class="joplin-logo" src="./assets/joppaint.svg"></img>
   </header>
   <main class="styleguide-sections">
     <section class="application-section">
-      <h2> Joplin Desktop </h2> <!-- TODO add collapsable sections for each "app" - Desktop, mobile, site, (forum?) etc. -->
-      <h3> Text colours </h3> <!--TODO add each theme to its own section + allow background colour toggle + collapsing sections-->
+      <h2> Joplin Desktop </h2>
+      <h3> Base colours </h3>
       <div class="inline-examples">
-        <h4> Light theme </h4> <!--TODO redo wording and remove redundant repeated lines-->
-        <div class="light-default-font"> Light theme default text </div> <!-- Example - Notelist items-->
-        <div class="light-inverted-font"> Light theme inverted text </div> <!--Example - Notebooks list "Notebooks", selected notebook, selected menu item-->
-        <div class="light-inverted-font-80opc"> Light theme inverted text - 80% opacity </div> <!--Example - Notebook list items, menu list items (default light + 0.8 opacity) -->
-        <div class="light-inverted-font-50opc"> Light theme inverted text - 50% opacity </div> <!--Example - Notebook list carets, note counter (rgba 50%) -->
-        <div class="light-inverted-font-40opc"> Light theme inverted text - 40% opacity </div> <!--Example - Notebook list "All notes" (rgba 50% + 0.8 opacity) -->
-        <div class="light-button-blue"> Light theme blue button text </div> <!--Example - Empty buttons w/ blue text -->
-        <div class="light-button-white"> Light theme white button text </div> <!--Example - Full buttons w/ white text -->
-        <div class="light-comment-text"> Light theme faded </div> <!--Example - Options screen comments-->
-        <div class="light-editor-items"> Light theme editor items </div> <!--Example - Editor title bar time + buttons -->
-        <div class="light-editor-items-33opc"> Light theme editor items - 30% opacity</div> <!--Example - Editor title buttons when not selected-->
-        <div class="light-editor-urltext"> Light theme editor URL text </div> <!--Example - URL text in the editors + preview -->
-        <div class="light-editor-urllink"> Light theme editor URL link </div> <!--Example - URL link in markdown editor (same as text + 50% opacity) -->
-        <div class="light-editor-monospace"> Light theme editor monospace </div> <!--Example - Monospaced (indented) font in markdown + richtext editor | MOVE TO CODE SECTION??-->
+        <h4> Light theme </h4>
+        <span> Text colours </span>
+        <div class="joplin-color-light"> joplin-color </div>
+        <div class="joplin-color2-light"> joplin-color2 </div>
+        <div class="joplin-color3-light"> joplin-color3 </div>
+        <div class="joplin-color4-light"> joplin-color4 </div>
+        <div class="joplin-color-bright-light"> joplin-color-bright </div>
+        <div class="joplin-color2-bright-light"> joplin-color2-bright </div>
+        <div class="joplin-url-color-light"> joplin-url-color </div>
+        <div class="joplin-color-faded-light"> joplin-color-faded </div>
+        <div class="joplin-code-color-light"> joplin-code-color </div>
+        <div class="joplin-color-error-light"> joplin-color-error </div>
+        <div class="joplin-color-error2-light"> joplin-color-error2 </div>
+        <div class="joplin-color-correct-light"> joplin-color-correct </div>
+        <div class="joplin-color-warn-light"> joplin-color-warn </div>
+        <div class="joplin-color-warn2-light"> joplin-color-warn2 </div>
+        <div class="joplin-color-warn-url-light"> joplin-color-warn-url </div>
+        <br>
+        <span> Background colours </span>
+        <div class="joplin-background-color-light"> joplin-background-color </div>
+        <div class="joplin-background-color2-light"> joplin-background-color2 </div>
+        <div class="joplin-background-color3-light"> joplin-background-color3 </div>
+        <div class="joplin-background-color4-light"> joplin-background-color4 </div>
+        <div class="joplin-header-background-color-light"> joplin-header-background-color </div>
+        <div class="joplin-background-color-transparent-light"> joplin-background-color-transparent </div>
+        <div class="joplin-odd-background-color-light"> joplin-odd-background-color </div>
+        <div class="joplin-selected-color-light"> joplin-selected-color </div>
+        <div class="joplin-selected-color2-light"> joplin-selected-color2 </div>
+        <div class="joplin-background-color-hover3-light"> joplin-background-color-hover3 </div>
+        <br>
+        <span> Component colours </span>
+        <div class="joplin-divider-color-light"> joplin-divider-color </div>
+        <div class="joplin-table-background-color-light"> joplin-table-background-color </div>
+        <div class="joplin-code-background-color-light"> joplin-code-background-color </div>
+        <div class="joplin-code-border-color-light"> joplin-code-border-color </div>
+        <br>
+        <span> Misc. colours </span>
+        <div class="joplin-search-marker-color-light"> joplin-search-marker-color </div>
+        <div class="joplin-search-marker-background-color-light"> joplin-search-marker-background-color </div>
+        <div class="joplin-warning-background-color-light"> joplin-warning-background-color </div>
+        <div class="joplin-raised-color-light"> joplin-raised-color </div>
+        <div class="joplin-raised-background-color-light"> joplin-raised-background-color </div>
+        <div class="joplin-text-selection-color-light"> joplin-text-selection-color </div>
         <h4> Dark theme </h4>
-        <div class="dark-default-font"> Dark theme default text </div> <!-- Example - Notelist items-->
-        <div class="dark-default2-font"> Dark theme default2 text </div> <!--Example - Notebooks list "Notebooks", selected notebook, selected menu item-->
-        <div class="dark-default2-font-80opc"> Dark theme default2 text - 80% opacity </div> <!--Example - Notebook list items, menu list items (default dark + 0.8 opacity) -->
-        <div class="dark-default2-font-50opc"> Dark theme default2 text - 50% opacity </div> <!--Example - Notebook list carets, note counter (rgba 50%) -->
-        <div class="dark-default2-font-40opc"> Dark theme default2 text - 40% opacity </div> <!--Example - Notebook list "All notes" (rgba 50% + 0.8 opacity) -->
-        <div class="dark-button-blue"> Dark theme blue button text </div> <!--Example - Empty buttons w/ blue text -->
-        <div class="dark-button-black"> Dark theme black button text </div> <!--Example - Full buttons w/ black text -->
-        <div class="dark-comment-text"> Dark theme faded </div> <!--Example - Options screen comments-->
-        <div class="dark-editor-items"> Dark theme editor items </div> <!--Example - Editor title bar time + buttons -->
-        <div class="dark-editor-items-33opc"> Dark theme editor items - 30% opacity</div> <!--Example - Editor title buttons when not selected-->
-        <div class="dark-editor-urltext"> Dark theme editor URL text </div> <!--Example - URL text in the editors + preview -->
-        <div class="dark-editor-urllink"> Dark theme editor URL link </div> <!--Example - URL link in markdown editor (same as text + 50% opacity) -->
-        <div class="dark-editor-monospace"> Dark theme editor monospace </div> <!--Example - Monospaced (indented) font in markdown + richtext editor -->
+        <div class="joplin-color-dark"> joplin-color </div>
       </div>
     </section>
-    <h3> UI and background colours </h3>
     <section class="application-section">
-      <div class="inline-examples">
-        <h4> Light theme </h4>
-        <div class="light-background-colour"> Light theme background colour </div> <!--Example - Editor background -->
-        <div class="light-background-colour-50opc"> Light theme background colour - 50% opacity </div> <!--Example - Inactive search box-->
-        <div class="light-background-colour2"> Light theme background colour </div> <!--Example - Sidebar background -->
-        <div class="light-background-colour3"> Light theme background colour </div> <!--Example - Notelist + editor toolbar background -->
-        <div class="light-selected-colour1"> Light theme selected colour </div> <!-- Example - Notelist item hover -->
-        <div class="light-selected-colour2"> Light theme selected colour 2 </div> <!-- Example - Notebook list + config menu hover -->
-        <div class="light-divider-colour"> Light theme divider colour </div> <!--Example - dividers between sections -->
-        <div class="light-button-colour1"> Light theme button colour 1 </div> <!--Example - Primary button -->
-        <div class="light-button-colour2"> Light theme button colour 2 </div> <!--Example - Primary button -->
-        <div class="light-scrollthumb-colour1"> Light theme scrollbar thumb unselected </div> <!--Example - Scrollbar thumb unselected (33% opacity)-->
-        <div class="light-scrollthumb-colour2"> Light theme scrollbar thumb selected </div> <!--Example - Scrollbar thumb selected (75% opacity)-->
-        <div class="light-scrollbarselected-colour"> Light theme scrollbar track selected </div> <!-- Example - Scrollbar track selected ()-->
-      </div>
-    </section>
-    <h3> Editor colours </h3>
-    <section class="application-section">
-      <div class="inline-examples">
-        <h4> Light theme </h4>
-        <div class="light-selected-text1"> Light theme text highlight 1 </div> <!-- Example - Select text in markdown editor (unfocused) -->
-        <div class="light-selected-text2"> Light theme text highlight 2 </div> <!-- Example - Select text in markdown editor (focused) -->
-        <div class="light-selected-text3"> Light theme text highlight 3 </div> <!-- Example - Select text in preview pane (unfocused) -->
-        <div class="light-selected-text4"> Light theme text highlight 4 </div> <!-- Example - Select text in preview pane (unfocused) -->
-        <div class="light-match-searchword"> Light theme matched search word </div> <!-- Example - Notelist search box, found matching string -->
-        <div class="light-failed-find"> Light theme failed find </div> <!-- Example - Ctrl + f find not found-->
-        <div class="light-find-marker1"> Light theme find marker 1 </div> <!-- Example - Ctrl + f marker selected -->
-        <div class="light-find-marker2"> Light theme find marker 2 </div> <!-- Example - Ctrl + f marker -->
+      <h3> Fonts </h3>
+      <div class="font-examples">
+        <!--Struggling with this section, some areas seem to use mac system fonts first then default to fonts included in the app such as Roboto
+        the title bar is arial for some reason, enforced by the user agent stylesheet, the editor default to avenir but seems again to be a mac included
+        font, however not sure why it seems to ignore some settings when toggled in the CSS-->
+        <div class="desktop-font-1"> Desktop font 1 - Roboto(?system dependant?), 13px, bold </div> <!--Example: Notebook list title-->
+        <div class="desktop-font-2"> Desktop font 2 - Roboto(?system dependant?), 13px, normal </div> <!--Example: Notebook list items-->
+        <div class="desktop-font-3"> Desktop font 3 - Roboto(?system dependant?), 12px, normal </div> <!--Example: Note list items, search box-->
+        <div class="desktop-font-4"> Desktop font 4 - Arial(?), 18px, bold </div> <!--Example: Note title - why is this arial?-->
+        <div class="desktop-font-5"> Desktop font 5 - Avenir(?), 15px, normal </div> <!--Example: MD editor plain text - font not free so many will default to Arial as a fallback-->
+        <div class="desktop-font-6"> Desktop font 6 - Ubuntu(?system dependant), 13.3333px, normal </div> <!--Example: button text. Assume this is based on a system heirachy too -->
+        <div class="desktop-font-7"> Desktop font 7 - Roboto(?system dependant?), 13px, 500 </div> <!--Example: Settings page headers-->
+        <div class="desktop-font-8"> Desktop font 8 - Roboto(?system dependant?), 12px, italic </div> <!--Example: Settings page comments-->
+        <div class="desktop-font-9"> Desktop font 9 - Roboto(?system dependant?), 14px, 500 </div> <!--Example: Settings sections-->
+        <div class="desktop-font-10"> Desktop font 10 - Roboto(?system dependant?), 15.6px, bold </div> <!--Example: Sync status items-->
+        <div class="desktop-font-11"> Desktop font 11 - Roboto(?system dependant?), 18px, bold </div> <!--Example: Sync wizard header-->
+        <div class="desktop-font-12"> Desktop font 12 - Roboto(?system dependant?), 27.2px, bold </div> <!--Example: Sync wizard titles-->
+        <div class="desktop-font-13"> Desktop font 13 - Roboto(?system dependant?), 16px, normal </div> <!--Example: Sync wizard text-->
+        <div class="desktop-font-14"> Desktop font 14 - Roboto(?system dependant?), 16px, italic </div> <!--Example: Sync wizard text2-->
+        <div class="desktop-font-15"> Desktop font 15 - Roboto(?system dependant?), 11px, normal </div> <!--Example: Notelist Sync messages-->
       </div>
     </section>
   </main>

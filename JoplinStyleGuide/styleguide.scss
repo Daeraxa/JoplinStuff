@@ -1,12 +1,12 @@
 @use 'styleguidevariables' as sgv;
-@use 'desktextvariables' as dtv;
-@use 'deskuivariables' as duv;
-@use 'deskeditorvariables' as dev;
+@use 'deskbasecolours' as dbc;
 
 html {
   font-family: sgv.$font-family;
   color: sgv.$font-defaultcolour;
   background-color: sgv.$bg-colour;
+  min-width: 800px;
+  margin: 50px;
 }
 
 h1 {}
@@ -59,177 +59,203 @@ p {
   border: sgv.$section-borders;
   border-radius: sgv.$section-border-radius;
   padding: 15px;
-/*Light theme text section*/
-  .light-default-font {
-    @include sgv.inline-colourblock-example (dtv.$light-default-font);
+/*Base Colours*/
+/*Light theme*/
+/*Text colours*/
+  .joplin-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-light);
   }
-  .light-inverted-font {
-    @include sgv.inline-colourblock-example (dtv.$light-inverted-font);
+  .joplin-color2-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color2-light);
   }
-  .light-inverted-font-80opc {
-    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-80opc);
+  .joplin-color3-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color3-light);
   }
-  .light-inverted-font-50opc {
-    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-50opc);
+  .joplin-color4-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color4-light);
   }
-  .light-inverted-font-40opc {
-    @include sgv.inline-colourblock-example (dtv.$light-inverted-font-40opc);
+  .joplin-color-bright-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-bright-light);
   }
-  .light-button-blue {
-    @include sgv.inline-colourblock-example (dtv.$light-button-blue);
+  .joplin-color2-bright-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color2-bright-light);
   }
-  .light-button-white {
-    @include sgv.inline-colourblock-example (dtv.$light-button-white);
+  .joplin-url-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-url-color-light);
   }
-  .light-comment-text {
-    @include sgv.inline-colourblock-example (dtv.$light-comment-text);
+  .joplin-color-faded-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-faded-light);
   }
-  .light-editor-items {
-    @include sgv.inline-colourblock-example (dtv.$light-editor-items);
+  .joplin-code-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-code-color-light);
   }
-  .light-editor-items-33opc {
-    @include sgv.inline-colourblock-example (dtv.$light-editor-items-33opc);
+  .joplin-color-error-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-error-light);
   }
-  .light-editor-urltext {
-    @include sgv.inline-colourblock-example (dtv.$light-editor-urltext);
+  .joplin-color-error2-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-error2-light);
   }
-  .light-editor-urllink {
-    @include sgv.inline-colourblock-example (dtv.$light-editor-urllink);
+  .joplin-color-correct-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-correct-light);
   }
-  .light-editor-monospace {
-    @include sgv.inline-colourblock-example (dtv.$light-editor-monospace);
+  .joplin-color-warn-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-warn-light);
   }
-/* Dark theme text section */
-  .dark-default-font {
-    @include sgv.inline-colourblock-example (dtv.$dark-default-font);
+  .joplin-color-warn2-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-warn2-light);
   }
-  .dark-default2-font {
-    @include sgv.inline-colourblock-example (dtv.$dark-default2-font);
+  .joplin-color-warn-url-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-color-warn-url-light);
   }
-  .dark-default2-font-80opc {
-    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-80opc);
+  /*Background colours*/
+  .joplin-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color-light);
   }
-  .dark-default2-font-50opc {
-    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-50opc);
+  .joplin-background-color2-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color2-light);
   }
-  .dark-default2-font-40opc {
-    @include sgv.inline-colourblock-example (dtv.$dark-default2-font-40opc);
+  .joplin-background-color3-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color3-light);
   }
-  .dark-button-blue {
-    @include sgv.inline-colourblock-example (dtv.$dark-button-blue);
+  .joplin-background-color4-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color4-light);
   }
-  .dark-button-black {
-    @include sgv.inline-colourblock-example (dtv.$dark-button-black);
+  .joplin-header-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-header-background-color-light);
   }
-  .dark-comment-text {
-    @include sgv.inline-colourblock-example (dtv.$dark-comment-text);
+  .joplin-background-color-transparent-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color-transparent-light);
   }
-  .dark-editor-items {
-    @include sgv.inline-colourblock-example (dtv.$dark-editor-items);
+  .joplin-odd-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-odd-background-color-light);
   }
-  .dark-editor-items-33opc {
-    @include sgv.inline-colourblock-example (dtv.$dark-editor-items-33opc);
+  .joplin-selected-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-selected-color-light);
   }
-  .dark-editor-urltext {
-    @include sgv.inline-colourblock-example (dtv.$dark-editor-urltext);
+  .joplin-selected-color2-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-selected-color2-light);
   }
-  .dark-editor-urllink {
-    @include sgv.inline-colourblock-example (dtv.$dark-editor-urllink);
+  .joplin-background-color-hover3-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-background-color-hover3-light);
   }
-  .dark-editor-monospace {
-    @include sgv.inline-colourblock-example (dtv.$dark-editor-monospace);
+  /*Component colours*/
+  .joplin-divider-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-divider-color-light);
   }
-/*Light theme UI section*/
-  .light-background-colour {
-    @include sgv.inline-colourblock-example (duv.$light-background-colour);
+  .joplin-table-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-table-background-color-light);
   }
-  .light-background-colour-50opc {
-    @include sgv.inline-colourblock-example (duv.$light-background-colour-50opc);
+  .joplin-code-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-code-background-color-light);
   }
-  .light-background-colour2 {
-    @include sgv.inline-colourblock-example (duv.$light-background-colour2);
+  .joplin-code-border-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-code-border-color-light);
   }
-  .light-background-colour3 {
-    @include sgv.inline-colourblock-example (duv.$light-background-colour3);
+  .joplin-search-marker-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-search-marker-color-light);
   }
-  .light-selected-colour1 {
-    @include sgv.inline-colourblock-example (duv.$light-selected-colour1);
+  .joplin-search-marker-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-search-marker-background-color-light);
   }
-  .light-selected-colour2 {
-    @include sgv.inline-colourblock-example (duv.$light-divider-colour);
+  .joplin-warning-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-warning-background-color-light);
   }
-  .light-divider-colour {
-    @include sgv.inline-colourblock-example (duv.$light-selected-colour2);
+  .joplin-raised-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-raised-color-light);
   }
-  .light-button-colour1 {
-    @include sgv.inline-colourblock-example (duv.$light-button-colour1);
+  .joplin-raised-background-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-raised-background-color-light);
   }
-  .light-button-colour2 {
-    @include sgv.inline-colourblock-example (duv.$light-button-colour2);
+  .joplin-text-selection-color-light {
+    @include sgv.inline-colourblock-example (dbc.$joplin-text-selection-color-light);
   }
-  .light-scrollthumb-colour1 {
-    @include sgv.inline-colourblock-example (duv.$light-scrollthumb-colour1);
-  }
-  .light-scrollthumb-colour2 {
-    @include sgv.inline-colourblock-example (duv.$light-scrollthumb-colour2);
-  }
-  .light-scrollbarselected-colour {
-    @include sgv.inline-colourblock-example (duv.$light-scrollbarselected-colour);
-  }
-/*Dark theme UI section*/
-/*Light theme Editor section*/
-  .light-selected-text1 {
-    @include sgv.inline-colourblock-example (dev.$light-selected-text1);
-  }
-  .light-selected-text2 {
-    @include sgv.inline-colourblock-example (dev.$light-selected-text2);
-  }
-  .light-selected-text3 {
-    @include sgv.inline-colourblock-example (dev.$light-selected-text3);
-  }
-  .light-selected-text4 {
-    @include sgv.inline-colourblock-example (dev.$light-selected-text4);
-  }
-  .light-match-searchword {
-    @include sgv.inline-colourblock-example (dev.$light-match-searchword);
-  }
-  .light-failed-find {
-    @include sgv.inline-colourblock-example (dev.$light-failed-find);
-  }
-  .light-find-marker1 {
-    @include sgv.inline-colourblock-example (dev.$light-find-marker1);
-  }
-  .light-find-marker2 {
-    @include sgv.inline-colourblock-example (dev.$light-find-marker2);
-  }
-
 }
 
+.font-examples {
+    background-color: sgv.$bg-colour2;
+    border: sgv.$section-borders;
+    border-radius: sgv.$section-border-radius;
+    padding: 15px;
 
+  div {
+    margin: 10px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//for scrolling
+  .desktop-font-1 {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .desktop-font-2 {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .desktop-font-3 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .desktop-font-4 {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .desktop-font-5 {
+    font-family: Avenir, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .desktop-font-6 {
+    font-family: Ubuntu, Arial;
+    font-size: 13.333px;
+    font-weight: normal;
+  }
+  .desktop-font-7 {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .desktop-font-8 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .desktop-font-9 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .desktop-font-10 {
+    font-family: Roboto;
+    font-size: 15.6px;
+    font-weight: bold;
+  }
+  .desktop-font-11 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .desktop-font-12 {
+    font-family: Roboto;
+    font-size: 27.2px;
+    font-weight: bold;
+  }
+  .desktop-font-13 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .desktop-font-14 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .desktop-font-15 {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: normal;
+  }
+}

@@ -4,10 +4,18 @@
 /*Divs + section formatting*/
 /*Mixins*/
 /*To format each inline example element*/
+/*Base colours from the :root CSS set from ???.ts*/
+/*Light theme*/
+/*Text Colours*/
+/*Background colours*/
+/*Component colours*/
+/*Misc colours*/
 html {
   font-family: "Montserrat", sans-serif;
   color: #32373f;
   background-color: #f4f5f6;
+  min-width: 800px;
+  margin: 50px;
 }
 
 p {
@@ -51,20 +59,20 @@ p {
   border: 1px solid #32373f;
   border-radius: 15px;
   padding: 15px;
-  /*Light theme text section*/
-  /* Dark theme text section */
-  /*Light theme UI section*/
-  /*Dark theme UI section*/
-  /*Light theme Editor section*/
+  /*Base Colours*/
+  /*Light theme*/
+  /*Text colours*/
+  /*Background colours*/
+  /*Component colours*/
 }
-.inline-examples .light-default-font {
+.inline-examples .joplin-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-default-font::before {
+.inline-examples .joplin-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -75,14 +83,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-inverted-font {
+.inline-examples .joplin-color2-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-inverted-font::before {
+.inline-examples .joplin-color2-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -93,122 +101,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-inverted-font-80opc {
+.inline-examples .joplin-color3-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-inverted-font-80opc::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffffcc;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-inverted-font-50opc {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-inverted-font-50opc::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff80;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-inverted-font-40opc {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-inverted-font-40opc::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff66;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-button-blue {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-button-blue::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #2d6bdc;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-button-white {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-button-white::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-comment-text {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-comment-text::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #7c8b9e;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-editor-items {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-editor-items::before {
+.inline-examples .joplin-color3-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -219,32 +119,68 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-editor-items-33opc {
+.inline-examples .joplin-color4-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-editor-items-33opc::before {
+.inline-examples .joplin-color4-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #73859854;
+  background-color: #2d6bdc;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-editor-urltext {
+.inline-examples .joplin-color-bright-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-editor-urltext::before {
+.inline-examples .joplin-color-bright-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-color2-bright-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-color2-bright-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-url-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-url-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -255,32 +191,32 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-editor-urllink {
+.inline-examples .joplin-color-faded-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-editor-urllink::before {
+.inline-examples .joplin-color-faded-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #155bda80;
+  background-color: #7c8b9e;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-editor-monospace {
+.inline-examples .joplin-code-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-editor-monospace::before {
+.inline-examples .joplin-code-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -291,230 +227,122 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-default-font {
+.inline-examples .joplin-color-error-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-default-font::before {
+.inline-examples .joplin-color-error-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #dddddd;
+  background-color: #ff0000;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-default2-font {
+.inline-examples .joplin-color-error2-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-default2-font::before {
+.inline-examples .joplin-color-error2-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ff6c6c;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-default2-font-80opc {
+.inline-examples .joplin-color-correct-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-default2-font-80opc::before {
+.inline-examples .joplin-color-correct-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #ffffffcc;
+  background-color: #008000;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-default2-font-50opc {
+.inline-examples .joplin-color-warn-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-default2-font-50opc::before {
+.inline-examples .joplin-color-warn-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #ffffff80;
+  background-color: #e45752;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-default2-font-40opc {
+.inline-examples .joplin-color-warn2-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-default2-font-40opc::before {
+.inline-examples .joplin-color-warn2-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #ffffff66;
+  background-color: #ffcb81;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-button-blue {
+.inline-examples .joplin-color-warn-url-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-button-blue::before {
+.inline-examples .joplin-color-warn-url-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #789fe9;
+  background-color: #155bda;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .dark-button-black {
+.inline-examples .joplin-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .dark-button-black::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #1d2024;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-comment-text {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-comment-text::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #999999;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-editor-items {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-editor-items::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #2e3138;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-editor-items-33opc {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-editor-items-33opc::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #2e313854;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-editor-urltext {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-editor-urltext::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #a6a6ff;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-editor-urllink {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-editor-urllink::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #a6a6ff80;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .dark-editor-monospace {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .dark-editor-monospace::before {
+.inline-examples .joplin-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -525,50 +353,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-background-colour {
+.inline-examples .joplin-background-color2-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-background-colour::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-background-colour-50opc {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-background-colour-50opc::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff80;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-background-colour2 {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-background-colour2::before {
+.inline-examples .joplin-background-color2-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -579,14 +371,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-background-colour3 {
+.inline-examples .joplin-background-color3-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-background-colour3::before {
+.inline-examples .joplin-background-color3-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -597,86 +389,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-selected-colour1 {
+.inline-examples .joplin-background-color4-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-selected-colour1::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #e5e5e5;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-selected-colour2 {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-selected-colour2::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #dddddd;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-divider-colour {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-divider-colour::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #131313;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-button-colour1 {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-button-colour1::before {
-  content: "";
-  width: 200px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  background-color: #2d6dbc;
-  border-radius: 10px;
-  border: 1px solid #32373f;
-  margin-right: 25px;
-}
-.inline-examples .light-button-colour2 {
-  height: 25px;
-  font-size: 14px;
-  padding: 0px 15px 0px 15px;
-  display: flex;
-  align-items: center;
-}
-.inline-examples .light-button-colour2::before {
+.inline-examples .joplin-background-color4-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -687,176 +407,194 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-scrollthumb-colour1 {
+.inline-examples .joplin-header-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-scrollthumb-colour1::before {
+.inline-examples .joplin-header-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #64646454;
+  background-color: #f0f0f0;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-scrollthumb-colour2 {
+.inline-examples .joplin-background-color-transparent-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-scrollthumb-colour2::before {
+.inline-examples .joplin-background-color-transparent-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #646464bf;
+  background-color: #ffffffe6;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-scrollbarselected-colour {
+.inline-examples .joplin-odd-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-scrollbarselected-colour::before {
+.inline-examples .joplin-odd-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #0000001a;
+  background-color: #eeeeee;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-selected-text1 {
+.inline-examples .joplin-selected-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-selected-text1::before {
+.inline-examples .joplin-selected-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-selected-text2 {
+.inline-examples .joplin-selected-color2-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-selected-text2::before {
+.inline-examples .joplin-selected-color2-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #d7d4f0;
+  background-color: #131313;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-selected-text3 {
+.inline-examples .joplin-background-color-hover3-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-selected-text3::before {
+.inline-examples .joplin-background-color-hover3-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #c8c8c8;
+  background-color: #cbdaf1;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-selected-text4 {
+.inline-examples .joplin-divider-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-selected-text4::before {
+.inline-examples .joplin-divider-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #0096ff;
+  background-color: #dddddd;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-match-searchword {
+.inline-examples .joplin-table-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-match-searchword::before {
+.inline-examples .joplin-table-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #cf3f00;
+  background-color: #f7f7f7;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-failed-find {
+.inline-examples .joplin-code-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-failed-find::before {
+.inline-examples .joplin-code-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
   display: flex;
   align-items: center;
-  background-color: #ffd08d;
+  background-color: #f3f3f3;
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-find-marker1 {
+.inline-examples .joplin-code-border-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-find-marker1::before {
+.inline-examples .joplin-code-border-color-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-search-marker-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-search-marker-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -867,14 +605,14 @@ p {
   border: 1px solid #32373f;
   margin-right: 25px;
 }
-.inline-examples .light-find-marker2 {
+.inline-examples .joplin-search-marker-background-color-light {
   height: 25px;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
   display: flex;
   align-items: center;
 }
-.inline-examples .light-find-marker2::before {
+.inline-examples .joplin-search-marker-background-color-light::before {
   content: "";
   width: 200px;
   height: 20px;
@@ -884,6 +622,165 @@ p {
   border-radius: 10px;
   border: 1px solid #32373f;
   margin-right: 25px;
+}
+.inline-examples .joplin-warning-background-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-warning-background-color-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #ffd08d;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-raised-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-raised-color-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #222222;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-raised-background-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-raised-background-color-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+.inline-examples .joplin-text-selection-color-light {
+  height: 25px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+.inline-examples .joplin-text-selection-color-light::before {
+  content: "";
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #0096ff;
+  border-radius: 10px;
+  border: 1px solid #32373f;
+  margin-right: 25px;
+}
+
+.font-examples {
+  background-color: #ffffff;
+  border: 1px solid #32373f;
+  border-radius: 15px;
+  padding: 15px;
+}
+.font-examples div {
+  margin: 10px;
+}
+.font-examples .desktop-font-1 {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+}
+.font-examples .desktop-font-2 {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-3 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-4 {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-5 {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-6 {
+  font-family: Ubuntu, Arial;
+  font-size: 13.333px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-7 {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+}
+.font-examples .desktop-font-8 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+}
+.font-examples .desktop-font-9 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.font-examples .desktop-font-10 {
+  font-family: Roboto;
+  font-size: 15.6px;
+  font-weight: bold;
+}
+.font-examples .desktop-font-11 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+}
+.font-examples .desktop-font-12 {
+  font-family: Roboto;
+  font-size: 27.2px;
+  font-weight: bold;
+}
+.font-examples .desktop-font-13 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+}
+.font-examples .desktop-font-14 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+}
+.font-examples .desktop-font-15 {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styleguide.css.map */

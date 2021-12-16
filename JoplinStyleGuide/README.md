@@ -33,5 +33,12 @@ If people are interested I might continue. If they aren't then I might also cont
 - [ ] Add iconography
 - [ ] Add tyopgraphy
 - [ ] Add reusable UI elements
-- [ ] Fix the reactive web page (please don't squash it, it gets very sad)
+- [ ] Fix the responsive web page (please don't squash it, it gets very sad)
 - [x] Drink more gin
+
+## Versions
+v0.1
+- Initial version taking note of most colours in desktop app + setting basic page layout
+v0.2
+- Removed initial work to use the default reusable colours from the joplin theme .ts files + organise more sensibly
+- Added (preliminary) font section that needs work after more thorough understanding of the source code + behaviour compared to Windows and macOS
