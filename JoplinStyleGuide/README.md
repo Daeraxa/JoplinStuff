@@ -39,6 +39,7 @@ If people are interested I might continue. If they aren't then I might also cont
 ## Versions
 v0.1
 - Initial version taking note of most colours in desktop app + setting basic page layout
+
 v0.2
 - Removed initial work to use the default reusable colours from the joplin theme .ts files + organise more sensibly
 - Added (preliminary) font section that needs work after more thorough understanding of the source code + behaviour compared to Windows and macOS
