@@ -40,7 +40,7 @@ The notes can be synchronised with various targets including the file system (fo
   
 **config** **{name}** **{value}** **[-options]**
 
-: Gets or sets a config value. If **{value}** is not provided, it will show the value of **{lname}**. If neither **{name}** nor **{value}** is provided, it will list the current configuration.
+: Gets or sets a config value. If **{value}** is not provided, it will show the value of **{name}**. If neither **{name}** nor **{value}** is provided, it will list the current configuration.
 
     *Options*
 
