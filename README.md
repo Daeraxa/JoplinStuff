@@ -12,3 +12,6 @@ Hopefully can be used to start discussions, if nothing else, into creation of a 
 
 ## Joplin Man
 Not a notetaking superhero, its my attempt to make a `man` page for the Joplin terminal/CLI app, currently its pretty much just the text from `joplin help all` with a few formatting changes and a couple of extra sections.
+
+## Joplin Font
+Simple conversion of the official svg into a a font that can be installed on an OS
